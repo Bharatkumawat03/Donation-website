@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+  
+   
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body >
+    
+    <nav class="navbar bg-dark text-light">
+        <div class="container ">
+          <a class="navbar-brand" href="#">
+            <img src="./img/cimg.jpg" alt="Bootstrap" width="80" height="80" class="rounded-circle img-responsive img-fluid">
+          </a>
+
+          <h6 class="display-6">Welcome, Bharat</h6>
+        </div>
+      </nav>
+
+
+      <section>
+        <div class="container  my-5 py-5 px-3 bg-body-tertiary rounded-3">
+            <div class="row ">
+                <div class="col-md-5 col-sm-12  cBorder border border-2 rounded-3 mx-auto px-0">
+                    <h1 class="py-4 border-bottom border-2 px-3 ">Comments 
+                        <!-- <button type="button" class="btn btn-dark float-end" id="cmt">Add</button> -->
+                        <!-- <form>
+                             <input type="text" id="bname" placeholder="Enter Name" class="my-2" required>
+                             <input type="date" id="bdate"  class="my-2 " required>
+                             <textarea id="bmsg" placeholder="message" class="my-2" required> </textarea>
+                         
+                          </form> -->
+                                            <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark float-end"  data-bs-toggle="modal" data-bs-target="#bexampleModal">
+    Add
+  </button> 
+  
+  <!-- Modal -->
+   <div class="modal fade " id="bexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Comment</h1>
+          <button type="button" class="btn-close ctClose" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="form2">
+                <input type="text" id="bname" placeholder="Enter Name" class="my-2 form-control" required>
+                <input type="date" id="bdate"  class="my-2 form-control" value="date" required>
+                
+                <textarea id="bmsg" placeholder="message" class="my-2 form-control" required></textarea>
+          <button type="submit" class="btn btn-dark "   id="cmt">Add</button>
+            
+             </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+                    </h1>
+                    <div class="overflow-auto hscrol px-3" >
+                    
+                    <div class="d-flex ">
+                    <div class="me-2">
+                        <img src="./img/r5.jpg" alt="" srcset="" class="rounded-circle" height="60" width="60">
+                    </div>
+                    <div>
+                        <h4>Bob Smith ,<small class="fs-6 fw-normal ms-2 text-body-secondary">01-01-2023</small></h4>
+                        
+                        <p class="w-75 text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque assumenda commodi aliquam eum tenetur ducimus!</p>
+                    </div>
+                </div>
+<hr>
+                <div class="d-flex ">
+                    <div class="me-2">
+                        <img src="./img/t3.jpg" alt="" srcset="" class="rounded-circle" height="60" width="60">
+                    </div>
+                    <div>
+                        <h4>Jane Doe ,<small class="fs-6 fw-normal ms-2 text-body-secondary">05-01-2023</small></h4>
+                      
+                        <p class="w-75 text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque assumenda commodi aliquam eum tenetur ducimus!</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex ">
+                    <div class="me-2">
+                        <img src="./img/t6.jpg" alt="" srcset="" class="rounded-circle" height="60" width="60">
+                    </div>
+                    <div>
+                        <h4>sarah Joe ,<small class="fs-6 fw-normal ms-2 text-body-secondary">16-01-2023</small></h4>
+                       
+                        <p class="w-75 text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque assumenda commodi aliquam eum tenetur ducimus!</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex ">
+                    <div class="me-2">
+                        <img src="./img/t4.jpg" alt="" srcset="" class="rounded-circle" height="60" width="60">
+                    </div>
+                    <div>
+                        <h4>Larry Carrey ,<small class="fs-6 fw-normal ms-2 text-body-secondary">21-01-2023</small></h4>
+                       
+                        <p class="w-75 text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque assumenda commodi aliquam eum tenetur ducimus!</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex ">
+                    <div class="me-2">
+                        <img src="./img/t5.jpg" alt="" srcset="" class="rounded-circle" height="60" width="60">
+                    </div>
+                    <div>
+                        <h4>Mick Montey ,<small class="fs-6 fw-normal ms-2 text-body-secondary">04-01-2023</small></h4>
+                        
+                        <p class="w-75 text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque assumenda commodi aliquam eum tenetur ducimus!</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex ">
+                    <div class="me-2">
+                        <img src="./img/t2.jpg" alt="" srcset="" class="rounded-circle" height="60" width="60">
+                    </div>
+                    <div>
+                        <h4>Bob Smith ,<small class="fs-6 fw-normal ms-2 text-body-secondary text-body-secondary">01-01-2016</small></h4>
+                        
+                        <p class="w-75 text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque assumenda commodi aliquam eum tenetur ducimus!</p>
+                    </div>
+                    
+                </div>
+                <!-- <hr> -->
+                    <div id="container"></div>
+                </div>
+                </div>
+                <div class="col-md-5 col-sm-12 cBorder border border-2  rounded-3 me-auto">
+                    <h1 class="text-center my-4">Goal</h1>
+                   
+                    <!-- <div class=""> -->
+                        <canvas height="300" width="760" id="preview" class="w-100 h-auto"></canvas>
+                        <div class="text-center display-6 d-flex justify-content-center">$
+                            <p class="text-center display-6 dval" id="dval"></p>
+                        </div> 
+                            <!-- <p class="text-center display-6 dval" id="dval"></p> -->
+                        
+                        
+                        <!-- <div class="gauge">
+                            <div class="gauge__body">
+                              <div class="gauge__fill"></div>
+                              <div class="gauge__cover"></div>
+                            </div>
+                          </div> -->
+                    <!-- <div id="gauge-container"></div> -->
+                <!-- </div> -->
+                  
+                </div>
+            </div>
+        </div>
+      </section>
+
+    
+      <section>
+        <div class="container  bg-body-tertiary rounded-3 pb-5 pt-3  my-5">
+          <div class="row"><div class="col-11 mx-auto w-100">
+            <div class="dtWidth mx-auto">
+              <h1 class="my-4 ">Donations
+                  
+                  <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark float-end"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add
+</button> 
+
+<!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Row</h1>
+        <button type="button" class="btn-close dtClose" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="form1">
+                  <input type="text" id="name" placeholder="Enter Name" class="my-2 form-control" required>
+                  <input type="number" id="subject" placeholder="donation" class="my-2 price form-control" min="1" required>
+                  <input type="date" id="date" placeholder="" class="my-2 form-control" required>
+        <button type="submit" class="btn btn-dark "  id="addRow">Add</button>
+              
+               </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+              </h1>
+              
+              <table id="myTable" class="display mx-auto border border-3 rounded-3 ">
+                  <thead>
+                      <tr>
+                          <th class="head1">Name</th>
+                          <th class="head2">Donation (In $)</th>
+                          <th >Date</th>
+                      </tr>
+                  </thead>
+                  <tbody class="table-body ">
+                      <tr>
+                       <td >Bob Smith</td>
+                       <td>1000</td>
+                       <!-- <td>1-1-2023</td> -->
+                       <td>01/01/2023</td>
+                      </tr>
+                      <tr>
+                          <td>Jane Doe</td>
+                          <td>20000</td>
+                          <!-- <td>1-5-23</td> -->
+                          <td>01/05/2023</td>
+                         </tr>
+                         <tr>
+                          <td>sarah Joe</td>
+                          <td>500</td>
+                          <!-- <td>1-16-2023</td> -->
+                          <td>01/16/2023</td>
+                         </tr>
+                         <tr>
+                          <td>Larry Carrey</td>
+                          <td>15000</td>
+                          <!-- <td>1-21-2023</td> -->
+                          <td>01/21/2023</td>
+                         </tr>
+                         <tr>
+                          <td>Mick Montey</td>
+                          <td>1</td>
+                          <!-- <td>1-4-2023</td> -->
+                          <td>01/04/2023</td>
+                         </tr>
+                         
+                  </tbody>
+              </table>
+          </div>
+          </div></div>
+            
+        </div>
+      </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="custom.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script src='https://bernii.github.io/gauge.js/dist/gauge.min.js'></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.js"></script>
+    
+
+
+  </body>
+</html>
